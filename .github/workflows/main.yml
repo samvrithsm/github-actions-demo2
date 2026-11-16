@@ -1,0 +1,19 @@
+name: Live Class Demo
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run Build and Test Simulation
+        run: |
+          echo "========================================"
+          echo " [INFO] Starting build for BMSCE project..."
+          echo " [INFO] Compiling code and running unit tests..."
+          echo " [SUCCESS] All 15 tests passed successfully!"
+          echo "========================================"
